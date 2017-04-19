@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_deal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/message_time"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_watch_later_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/message_time"
+            android:id="@+id/message_noofmsgs"
+            android:text="5"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_msg_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 min ago"
+            android:layout_alignParentRight="true"
+            android:id="@+id/message_time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GLOBAL ELECTRONICS"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/service_message"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:id="@+id/service_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Problem Sir. Will update Soon."
+            android:layout_below="@id/service_name"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/message_msg"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/message_deal"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

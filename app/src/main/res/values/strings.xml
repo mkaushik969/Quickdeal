@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quickdeal</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_items">ItemsActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_services">ServicesActivity</string>
+</resources>
